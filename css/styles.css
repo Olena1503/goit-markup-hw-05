@@ -676,3 +676,44 @@ body {
 .input-wrap {
   position: relative;
 }
+.check-text{
+  color: var(--ligh-slateslate, #8E8F99);
+font-size: 12px;
+letter-spacing: 0.04em;
+display: flex;
+align-items: center;
+}
+.privacy-link {
+  color: var(--iris);
+}
+.check-text span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;height: 16px;
+  border-radius: 2px;
+border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+margin-right: 8px;
+fill: transparent;
+}
+.modal-check:checked + .check-text span {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+} 
+.modal-form-btn {
+  color: var(--white);
+  background: var(--iris);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 0.15;
+letter-spacing: 0.02em;
+width: 169px;
+height: 56px;
+margin-top: 24px;
+}
