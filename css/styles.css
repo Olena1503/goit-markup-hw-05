@@ -453,8 +453,7 @@ body {
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: center;
+  margin-left: 80px;
 }
 .footer-form-text {
   color: var(--white);
@@ -463,6 +462,7 @@ letter-spacing: 0.02em;
 margin-bottom: 16px;
 }
 .footer-form {
+  display: flex;
 }
 .footer-input {
   width: 264px; height: 40px;
@@ -471,7 +471,9 @@ margin-bottom: 16px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding: 8px 16px;
+  outline: transparent;
   margin-right: 24px;
+  
 }
 .footer-form-btn {
   width: 165px;
@@ -486,7 +488,16 @@ margin-bottom: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-}
+  fill: var(--white);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+    justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+  }
 
 /**----PORTFOLIO-BOOTON-FILTER---------------------------------------------*/
 .main-portfolio {
